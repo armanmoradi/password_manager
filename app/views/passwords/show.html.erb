@@ -1,3 +1,6 @@
-<h1>Show Password</h1>
 <h1><%= @password.url %></h1>
-
+<%= link_to "edit", edit_password_path %>
+<h6 class="mt-0">Username / Email</h6>
+<pre><code><%= @password.username %></code></pre>
+<h6 class="mt-0">Password</h6>
+<pre><code><%= @password.password %></code></pre>
